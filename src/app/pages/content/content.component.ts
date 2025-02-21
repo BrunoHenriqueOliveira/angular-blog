@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {RouterLink} from '@angular/router';
+import {ActivatedRoute, RouterLink} from '@angular/router';
+import {dataFake} from '../../data/dataFake'
 
 @Component({
   selector: 'app-content',
@@ -10,7 +11,25 @@ import {RouterLink} from '@angular/router';
   styleUrl: './content.component.css'
 })
 export class ContentComponent {
-  photoCover: string = "https://files.tecnoblog.net/wp-content/uploads/2025/01/nintendo-switch-2-capa-1060x596.jpg";
-  contentTitle: string = "Minha Noticia";
-  contentDescription: string = " lorem";
+  photoCover: string = "";
+  contentTitle: string = "";
+  contentDescription: string = "";
+  private id:string | null = "0";
+
+  constructor(private router: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.router.paramMap.subscribe(value => this.id = value.get("id"));
+
+    this.setValuesToComponent(this.id);
+  }
+
+  setValuesToComponent(id:string | null) {
+    const result = dataFake
+      .filter(article => article.id == id)[0]
+
+    this.contentTitle = result.title;
+    this.contentDescription = result.description;
+    this.photoCover = result.photoCover;
+  }
 }
