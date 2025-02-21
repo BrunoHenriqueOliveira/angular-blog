@@ -1,12 +1,9 @@
 .container__content{
   width: 100%;
   height: 100vh;
-
   margin-top: 20px;
-
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 
@@ -19,10 +16,31 @@
 }
 
 .content__description{
-  margin-top: 15px;
+  max-width: 800px; /* Define uma largura máxima para melhor leitura */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
+  font-family: 'Arial', sans-serif; /* Define uma fonte legível */
+  font-size: 18px; /* Ajusta o tamanho da fonte */
+  line-height: 1.6; /* Melhora o espaçamento entre linhas */
+  color: #333; /* Cor do texto para boa leitura */
+}
+
+.content__description a {
+  display: inline-block; /* Garante que o link respeite margens */
+  margin-bottom: 16px; /* Espaçamento entre o link e o parágrafo */
+  font-size: 16px;
+  color: #007BFF; /* Azul para o link */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold;
+}
+
+.content__description a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
 .content__description > p{
   margin-top: 20px;
   color: grey;
+  text-align: justify; /* Justifica o texto para melhor leitura */
+  text-indent: 20px; /* Dá um recuo no primeiro parágrafo */
 }
