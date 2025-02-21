@@ -2,8 +2,6 @@
 
 Um blog simples desenvolvido com **Angular**, permitindo exibir notícias em destaque e uma lista de artigos.
 
-![Blog Banner](src/assets/images/imagem do blog - inicio.png)
-
 ## ✨ Funcionalidades
 
 - 📌 Exibição de notícias em destaque.
