@@ -1,59 +1,46 @@
-# AngularBlog
+# 📖 Blog Simples
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+Um blog simples desenvolvido com **Angular**, permitindo exibir notícias em destaque e uma lista de artigos.
 
-## Development server
+![Blog Banner](src/assets/images/imagem do blog - inicio.png)
 
-To start a local development server, run:
+## ✨ Funcionalidades
 
-```bash
+- 📌 Exibição de notícias em destaque.
+- 📰 Listagem de artigos em formato de cards.
+- 🔄 Navegação entre diferentes seções.
+
+## 🚀 Tecnologias Utilizadas
+
+- **Angular** (Framework Front-end)
+- **TypeScript** (Linguagem)
+- **CSS** (Estilização)  
+
+## 🔧 Como Executar o Projeto
+
+1️⃣ **Clone o repositório**
+```sh
+git clone https://github.com/seu-usuario/blog-simples.git
+cd blog-simples
+```
+
+2️⃣ **Instale as dependências**
+```sh
+npm install
+```
+
+3️⃣ **Execute o projeto**
+```sh
 ng serve
 ```
+📌 Acesse: `http://localhost:4200/`
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🛠️ Melhorias Futuras
 
-## Code scaffolding
+- Integração com uma **API real** para buscar artigos.
+- Adicionar funcionalidade de **pesquisa e categorias**.
+- Implementar um **sistema de login** para autores.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📜 Licença
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este projeto é open-source e pode ser modificado e distribuído conforme necessário.
